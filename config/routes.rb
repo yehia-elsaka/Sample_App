@@ -8,4 +8,5 @@ Rails.application.routes.draw do
   get  '/contact', to: 'static_pages#contact'
   get  '/signup',  to: 'users#new'
   get 'api_sample' => "static_pages#api_sample"
+  resources :users
 end
